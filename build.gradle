@@ -1,0 +1,57 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: "4.+"
+    testCompile "org.mockito:mockito-core:2.+"
+}
+
+repositories {
+    mavenCentral()
+}
+
+compileJava {
+    options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation" << "-Werror"
+}
+
+compileTestJava {
+    options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation" << "-Werror"
+}
+
+sourceSets.main.resources.srcDirs = ['Final/src']
+sourceSets.main.java.srcDirs = ['Final/src']
+sourceSets.test.java.srcDirs = ['Final/test']
+
+jacocoTestReport {
+    doFirst{
+        classDirectories = fileTree(
+                dir: './build/classes/main/app',
+                excludes: ['**/ui/*.class']
+        )
+    }
+
+    reports {
+        xml.enabled false
+        csv.enabled false
+        html.destination "build/reports/coverageHtml"
+    }
+}
+
+task(runui, dependsOn: 'classes', type: JavaExec) {
+    standardInput = System.in
+    main = 'app.ui.GuessingGameUI'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task fatJar(type: Jar) {
+    manifest {
+        attributes 'GuessingGame': 'GuessingGame.jar',
+            'Implementation-Version': 1.0,
+            'Main-Class': 'app.ui.GuessingGameUI'
+    }
+    baseName = 'GuessingGame'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
+defaultTasks 'clean', 'test', 'jacocoTestReport'

@@ -1,0 +1,21 @@
+Total [100]: 83
+Automated build file setup properly [10]:
+Program Compiles [10]:
+
+Runs and produces the desired result [10]: -10
+Error: Could not find or load main class ui.Final
+
+
+All Tests pass [20]:
+Test Quality [10]: -1
+Each test should have an assert.
+
+Code coverage [10]:
+
+Design Quality [10]:
+
+Code Quality [10]: -1
+Avoid empty catch blocks.
+
+Dependency handled well, including test for error handling [10]: -5
+Heading in the right direction, need to proceed to drive using positive, negative, and exception tests.

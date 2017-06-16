@@ -1,0 +1,10 @@
+monkey
+fruit
+banana
+morning
+afternoon
+evening
+category
+guess
+automobile
+diploma

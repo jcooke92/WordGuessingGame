@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.GuessingGameLogicTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2017-06-16T18:46:26" hostname="Jonathans-MacBook-Air.local" time="0.016">
+  <properties/>
+  <testcase name="calculatePointsReturnsPoints" classname="app.GuessingGameLogicTest" time="0.001"/>
+  <testcase name="calculatePointsOfDifferentWordReturnsNoPoints" classname="app.GuessingGameLogicTest" time="0.001"/>
+  <testcase name="checkCharactersInCommonWithWordReturnsCommonLetters" classname="app.GuessingGameLogicTest" time="0.001"/>
+  <testcase name="checkWordsWithNoCommonConsonantsReturnsNoCommonConsonants" classname="app.GuessingGameLogicTest" time="0.001"/>
+  <testcase name="checkWordsWithNoCommonChractersReturnsNoCommonCharacters" classname="app.GuessingGameLogicTest" time="0.0"/>
+  <testcase name="didNotWinIfWordsAreDifferent" classname="app.GuessingGameLogicTest" time="0.0"/>
+  <testcase name="checkVowelsInCommonReturnsCommonVowels" classname="app.GuessingGameLogicTest" time="0.001"/>
+  <testcase name="scrambledWordIsDifferentFromOriginal" classname="app.GuessingGameLogicTest" time="0.001"/>
+  <testcase name="getRandomWordFromEmptyWordListReturnsEmptyString" classname="app.GuessingGameLogicTest" time="0.0"/>
+  <testcase name="scrambleEmptyWordReturnsEmptyWord" classname="app.GuessingGameLogicTest" time="0.0"/>
+  <testcase name="getRandomWordFromListReturnsRandomWordFromList" classname="app.GuessingGameLogicTest" time="0.0"/>
+  <testcase name="checkConsonantsInCommonReturnsCommonConsonants" classname="app.GuessingGameLogicTest" time="0.001"/>
+  <testcase name="checkWordsWithNoCommonVowelsReturnsNoCommonVowels" classname="app.GuessingGameLogicTest" time="0.001"/>
+  <testcase name="wonGameIfWordsAreSame" classname="app.GuessingGameLogicTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
