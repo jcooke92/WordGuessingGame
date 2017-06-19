@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="app.SpellingCheckServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-06-16T18:46:26" hostname="Jonathans-MacBook-Air.local" time="1.144">
+<testsuite name="app.SpellingCheckServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-06-19T19:56:13" hostname="Jonathans-MacBook-Air.local" time="1.189">
   <properties/>
-  <testcase name="mockCorrectlySpelledWordReturnsTrue" classname="app.SpellingCheckServiceTest" time="1.142"/>
+  <testcase name="mockCorrectlySpelledWordReturnsTrue" classname="app.SpellingCheckServiceTest" time="1.188"/>
   <testcase name="mockIncorrectlySpelledWordReturnsFalse" classname="app.SpellingCheckServiceTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

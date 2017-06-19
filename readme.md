@@ -5,3 +5,8 @@ The goal of this project was to employ Gradle and test-driven design to create a
 To tackle this project, I thought about what components would be required. There would need to be the core logic, file handling, spell checking service, and user interface. I then set out to write tests for each of these components and implement the methods that would make the tests pass, starting with the logic and ending on the user interface.  
 
 The final result is a modular application built around test-driven design and abstraction. 
+
+
+************* TO RUN *************
+
+Clone the JAR file in the build/libs directory and run with "java -jar GuessingGame.jar"
